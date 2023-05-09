@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "bb183c80-7ca8-4f2d-b79a-057018e97f4e",
+		"name": "example_rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1601/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"cust 1\",\n    \"customerEmail\": \"name@example.com\",\n    \"products\": [\n        {\n        \"name\": \"bell mobile\",\n        \"price\": 6000,\n        \"quantity\": 2,\n        \"specifications\": [\n                {\n                \"key\": \"ram\",\n                \"value\": \"2GB\"\n                },\n                {\n                \"key\": \"wireless charging\",\n                \"value\": \"yes\"\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1601/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1601",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1601/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1601",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
