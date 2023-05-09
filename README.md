@@ -16,3 +16,6 @@
 
 # check Api on postman (post) for orders
 # http://localhost:1601/orders (post)
+# example_rest.postman_collection file is added as data sample
+
+
